@@ -14,6 +14,13 @@ body {
 	padding-left: 32px;
 	padding-right: 70px;
 	margin-bottom: 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff; 
+	z-index: 99;
+
 }
 .menu-button {
 	background-color: #fff;
@@ -93,6 +100,20 @@ body {
 }
 .sidebar {
 	padding-left: 32px;
+	position: fixed;
+	left: 0;
+	top: 114px;
+	height: calc(100% - 114px);
+	overflow-y: auto;
+	width: 15%;
+	background-color: #fff;
+}
+.content {
+	width: 100%;
+	height: 100%;
+	margin-top: 85px;
+	padding-left: 17%;
+	padding-top: 30px;
 }
 .nav-menu {
 	margin-top: 0;
@@ -134,4 +155,97 @@ body {
     font-size: 18px;
     line-height: 23px;
     margin-bottom: 30px;
+}
+.channel {
+	position: relative;
+	margin-bottom: 49px;
+}
+.channel-title {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #19202c;
+	font-weight: bold;
+    font-size: 26px;
+    line-height: 33px;
+    margin-bottom: 30px;
+}
+
+.channel-avatar {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+.channel-text {
+	margin-left: 20px;
+}
+.video-thumb {
+	width: 250px;
+	height: 150px;
+	border-radius: 14px;
+	position: relative;
+}
+.video-card {
+	width: 250px;
+
+}
+.thumbnail {
+	width: 250px;
+	height: 150px;
+	object-fit: cover;
+}
+.time {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	background: rgba(0,0,0,0,3);
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    padding: 3px 9px;
+}
+.video-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #19202C;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+.video-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 13px;
+	line-height: 16px;
+	color: #c2c2c2;
+}
+.video-counter{
+	display: flex;
+}
+.video-views {
+	margin-right: 5px;
+}
+.video-views: after {
+	content: '';
+	width: 2px;
+	height: 2px;
+	background-color: #c2c2c2; 
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+
+}
+.channel-button {
+	cursor: pointer;
+}
+.slider-buttons {
+	position: absolute;
+	right: 8%;
+	top: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 66px;
 }
