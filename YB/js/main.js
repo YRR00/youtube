@@ -75,8 +75,8 @@ const swiperRecommendedChannel = new Swiper('.recommended-channel-slider', {
    }
   }
 });
-const searchBtn = document.querySelector('.mobile-search');
-const mobileSearch = document.querySelector('.input-group');
+const searchBtn = document.querySelector(' .mobile-sidebar');
+const mobileSearch = document.querySelector(' .input-group');
 searchBtn.addEventListener('click', ()=> {
   mobileSearch.classList.toggle('is-open');
 })

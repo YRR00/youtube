@@ -13,7 +13,7 @@ body {
 	padding-bottom: 20px;
 	padding-left: 32px;
 	padding-right: 70px;
-	margin-bottom: 30px;
+	margin-bottom: 32px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -43,8 +43,11 @@ body {
 	height: 3px;
 	border-radius: 20px;
 }
+.logo {
+	margin-right: 60px;
+}
 .imput-group {
-	background: #EBEBEB;
+	background-color: #EBEBEB;
 	border-radius: 22px;
 	display: flex;
 	justify-content: space-between;
@@ -84,9 +87,6 @@ body {
 	margin-left: auto;
 }
 
-.logo{
-	padding-right: 59px;
-}
 
 .icons-link {
 	text-decoration: none;
@@ -181,6 +181,7 @@ body {
 }
 
 .channel-avatar {
+
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
@@ -207,12 +208,20 @@ body {
 	position: absolute;
 	bottom: 10px;
 	right: 10px;
-	background: rgba(0,0,0,0,3);
+	background: rgba(0,0,0,0.3);
     border-radius: 12px;
     font-size: 14px;
     line-height: 18px;
     color: #fff;
     padding: 3px 9px;
+}
+.video-recommended {
+  width: 100%;
+  height: 250px;
+}
+.recommended {
+  width: 100%;
+  height: 250px;
 }
 .video-title {
     font-weight: bold;
@@ -273,10 +282,10 @@ body {
 	}
 }
 @media (max-width: 640px) {
+
 	.swiper-wrapper {
 		display: flex;
 		flex-direction: column;
-		
 	}
 	.swiper-slide {
 		margin-bottom: 40px;
@@ -284,17 +293,21 @@ body {
 	.video-thumb {
 		height: 300px;
 	}
-	.slider-button {
+	.thumbnail {
+    height: inherit;
+    }
+	.slider-buttons {
 		display: none;
 	}
 	.mobile-search {
 		display: block;
 		margin-left: auto;
+		cursor: pointer;
 	}
 	.user {
 		margin-left: 20px;
 	}
-	.input-group {
+	.imput-group {
 		position: fixed;
 		top: -100px;
 		opacity: 0;
@@ -302,12 +315,13 @@ body {
 		width: 68%;
 		margin-left: 25px;
 		transition: top 0.2s;
+
 	}
-	.imput-group. is-open {
+	.imput-group.is-open {
 		opacity: 1;
 		top: 20px;
 	}
-	.menu-bitton {
+	.menu-button {
 		display: none;
 	}
 	.sidebar {
